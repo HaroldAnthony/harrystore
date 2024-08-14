@@ -12,6 +12,7 @@ const Home = () => {
             results to serious customers, who co-operate with our modus
             operandi.
           </p>
+          <button>Contact us</button>
         </div>
       </div>
     </div>
