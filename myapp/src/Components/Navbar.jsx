@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import HSLogo from "./images/hs-logo.png";
-import ""
+import "./Navbar.css";
+import SearchIcon from '@mui/icons-material/Search';
 
 const Navbar = () => {
   return (
@@ -26,12 +27,39 @@ const Navbar = () => {
               {/* LocalIcon */}
             </div>
           </div>
-          <Link to="/">Home</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/privacy">Privacy</Link>
-          <Link to="/loginform">Login</Link>
-          <Link to="/signup">Signup</Link>
+          <div className="Nav_links">
+          <Link to="/" className="link" >
+          Home
+          </Link>
+          <Link to="/contact" className="link" >
+          Contact
+          </Link>
+          <Link to="/privacy" className="link" >
+          Privacy
+          </Link>
+          <Link to="/loginform" className="link" >
+          Login
+          </Link>
+          <Link to="/signup" className="link" >
+          Signup
+          </Link>
+          </div>
         </div>
+        <Link to="/" className="sidebar_link">
+          Home
+          </Link>
+          <Link to="/contact" className="sidebar_link">
+          Contact
+          </Link>
+          <Link to="/privacy" className="sidebar_link">
+          Privacy
+          </Link>
+          <Link to="/loginform" className="sidebar_link">
+          Login
+          </Link>
+          <Link to="/signup" className="sidebar_link">
+          Signup
+          </Link>
       </div>
     </div>
   );
