@@ -4,34 +4,44 @@ import HSLogo from "./images/hs-logo.png";
 import "./Navbar.css";
 import SearchIcon from "@mui/icons-material/Search";
 import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from '@mui/icons-material/Close';
-import LocalMallIcon from '@mui/icons-material/LocalMall';
+import CloseIcon from "@mui/icons-material/Close";
+import LocalMallIcon from "@mui/icons-material/LocalMall";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [data, setdata] = useState(false);
+  const [menu, setmenu] = useState(false);
+
+  const inputhandler = () => {
+    setdata(!data);
+  };
+
+  const menuhandler = () => {
+    setmenu(!menu);
+  };
+
   return (
     <div>
       <div className="navbar_div">
-        <div>
+        <div className={data ? "input_form" : "input_form_not"}>
           <input type="text" placeholder="Search here" />
           <SearchIcon className="Search_icon_input" />
-          <CloseIcon className="close_icon" />
+          <CloseIcon onClick={inputhandler} className="close_icon" />
         </div>
-        <div>
+        <div className={data ? "header" : ""}>
           <div className="navbar_main">
-            <div>
+            <div onClick={inputhandler}>
               <div>
                 {" "}
                 <SearchIcon className="Search_icon" />
               </div>
-              <MenuIcon className="menu_icon" />
+              <MenuIcon onClick={menuhandler} className="menu_icon" />
             </div>
-            <div>
-              <img src={HSLogo}
-              className="heading_logo" alt="" />
+          <div>
+              <img src={HSLogo} className="heading_logo" alt="" />
             </div>
             <div className="bad_search">
-              <SearchIcon className="Search_icon2" />
-              {/* LocalIcon */}
+              <SearchIcon onClick={inputhandler} className="Search_icon2" />
               <LocalMallIcon className="bag_icon" />
             </div>
           </div>
@@ -52,7 +62,9 @@ const Navbar = () => {
               Signup
             </Link>
           </div>
-        </div>
+         </div> 
+       </div>
+        <div className={menu ? "sidebar2" : "sidebar1"}>
         <Link to="/" className="sidebar_link">
           Home
         </Link>
