@@ -7,6 +7,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
 import { useState } from "react";
+import Header from "./Header";
 
 const Navbar = () => {
   const [data, setdata] = useState(false);
@@ -21,6 +22,8 @@ const Navbar = () => {
   };
 
   return (
+    <>
+    <Header />
     <div>
       <div className="navbar_div">
         <div className={data ? "input_form" : "input_form_not"}>
@@ -82,6 +85,7 @@ const Navbar = () => {
         </Link>
       </div>
     </div>
+    </>
   );
 };
 
