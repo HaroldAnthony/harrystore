@@ -4,6 +4,8 @@ import HSLogo from "./images/hs-logo.png";
 import "./Navbar.css";
 import SearchIcon from "@mui/icons-material/Search";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from '@mui/icons-material/Close';
+import LocalMallIcon from '@mui/icons-material/LocalMall';
 
 const Navbar = () => {
   return (
@@ -12,7 +14,7 @@ const Navbar = () => {
         <div>
           <input type="text" placeholder="Search here" />
           <SearchIcon className="Search_icon_input" />
-          {/* CloseIcon */}
+          <CloseIcon className="close_icon" />
         </div>
         <div>
           <div className="navbar_main">
@@ -30,6 +32,7 @@ const Navbar = () => {
             <div className="bad_search">
               <SearchIcon className="Search_icon2" />
               {/* LocalIcon */}
+              <LocalMallIcon className="bag_icon" />
             </div>
           </div>
           <div className="Nav_links">
