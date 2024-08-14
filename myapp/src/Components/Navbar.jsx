@@ -7,6 +7,21 @@ const Navbar = () => {
       <div className='navbar_div'>
         <div>
           <input type='text' placeholder='Search here' />
+          {/* SearchIcon */}
+          {/* CloseIcon */}
+        </div>
+        <div>
+          <div className='navbar_main'>
+            <div>
+              <div>
+                {/* SearchIcon */}
+              </div>
+              {/* MenuIcon */}
+            </div>
+            <div>
+              <img src='' alt='' />
+            </div>
+          </div>
         </div>
       </div>
         <Link to="/">Home</Link>
