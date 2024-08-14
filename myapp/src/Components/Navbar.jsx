@@ -30,14 +30,14 @@ const Navbar = () => {
         </div>
         <div className={data ? "header" : ""}>
           <div className="navbar_main">
-            <div onClick={inputhandler}>
-              <div>
+            <div>
+              <div onClick={inputhandler}>
                 {" "}
                 <SearchIcon className="Search_icon" />
               </div>
               <MenuIcon onClick={menuhandler} className="menu_icon" />
             </div>
-          <div>
+            <div>
               <img src={HSLogo} className="heading_logo" alt="" />
             </div>
             <div className="bad_search">
@@ -62,9 +62,9 @@ const Navbar = () => {
               Signup
             </Link>
           </div>
-         </div> 
-       </div>
-        <div className={menu ? "sidebar2" : "sidebar1"}>
+        </div>
+      </div>
+      <div className={menu ? "sidebar2" : "sidebar1"}>
         <Link to="/" className="sidebar_link">
           Home
         </Link>
