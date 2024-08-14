@@ -6,6 +6,7 @@ import Loginform from './Components/Loginform';
 import Signup from './Components/Signup';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
+import "./App.css";
 
 const App = () => {
   return <div>

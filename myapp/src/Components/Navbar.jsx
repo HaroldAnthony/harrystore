@@ -24,7 +24,8 @@ const Navbar = () => {
               <MenuIcon className="menu_icon" />
             </div>
             <div>
-              <img src={HSLogo} className="heading_logo" alt="" />
+              <img src={HSLogo}
+              className="heading_logo" alt="" />
             </div>
             <div className="bad_search">
               <SearchIcon className="Search_icon2" />
