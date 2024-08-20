@@ -1,5 +1,6 @@
 import React from "react";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import "../styles/navbar.css"
 
 const Navbar = () => {
   return (
