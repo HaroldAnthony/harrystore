@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Navbar from './Cart components/Navbar';
 
 const Cartform = () => {
   return (
-    <div>Cartform</div>
-  )
-}
+    <div>
+        <Navbar/>
+    </div>
+  );
+};
 
-export default Cartform
+export default Cartform;
