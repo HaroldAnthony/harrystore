@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import list from "../data";
+import Shopcart from "./Shopcart";
 
 const Amazon = () => {
   return (
-    <div>Amazon</div>
-  )
-}
+    <div>
+      {list.map((list) => (
+        <Shopcart key={list.id} list={list} />
+      ))}
+    </div>
+  );
+};
 
-export default Amazon
+export default Amazon;
