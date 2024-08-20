@@ -11,4 +11,4 @@ My e-commerce platform, built using React.js.
 
 <br>
 
-
+<b>20-08-2024 18:22</b> - <p>The Navbar, header announcement and basic product list has been constructed onto the React App. Images of product "cards" were integrated as online image links, instead of local images, to avoid errors.</p>
