@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/shopcart.css"
 
 const Shopcart = ({ item }) => {
   if (item) {

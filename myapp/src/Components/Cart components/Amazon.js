@@ -1,6 +1,7 @@
 import React from "react";
 import list from "../data";
 import Shopcart from "./Shopcart";
+import "../styles/amazon.css"
 
 const Amazon = () => {
   return (
