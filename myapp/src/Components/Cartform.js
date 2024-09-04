@@ -34,21 +34,19 @@ const Cartform = () => {
     tempArr[ind].amount += d;
     if (tempArr[ind].amount === 0) tempArr[ind].amount = 1;
     setCart([...tempArr]);
-
   };
 
   return (
     <div>
       <Navbar setShow={setShow} size={cart.length} />
-      
-      <h1 className="heading_content">
-        The Safest Place in the Internet.
-      </h1>
+
+      <h1 className="heading_content">The Safest Place in the Internet.</h1>
       {show ? (
         <Amazon handleClick={handleClick} />
       ) : (
         <Cart cart={cart} setCart={setCart} handlechange={handlechange} />
-      )}{warning && (
+      )}
+      {warning && (
         <div className="Warning">Item is already added to your cart!</div>
       )}
     </div>

@@ -2,11 +2,11 @@ import React from "react";
 import list from "../data";
 import Shopcart from "./Shopcart";
 
-const Amazon = ({handleClick}) => {
+const Amazon = ({ handleClick }) => {
   return (
     <section>
       {list.map((list) => (
-        <Shopcart item={list} handleClick = {handleClick} key={list.id} />
+        <Shopcart item={list} handleClick={handleClick} key={list.id} />
       ))}
     </section>
   );

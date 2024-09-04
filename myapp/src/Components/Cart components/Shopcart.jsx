@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/shopcart.css";
 
-const Shopcart = ({ item, handleClick}) => {
+const Shopcart = ({ item, handleClick }) => {
   if (item) {
     const { title, price, img } = item;
     const newhandleclick = () => {
