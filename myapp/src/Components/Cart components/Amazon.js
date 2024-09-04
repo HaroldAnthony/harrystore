@@ -1,7 +1,6 @@
 import React from "react";
 import list from "../data";
 import Shopcart from "./Shopcart";
-import { useState } from "react";
 
 const Amazon = ({handleClick}) => {
   return (
