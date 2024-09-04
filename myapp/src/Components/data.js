@@ -28,14 +28,14 @@ const list = [
     amount: 1,
   },
   {
-    id: 4,
+    id: 5,
     title: "Baby Smoothie (with sweeteners)",
     price: 4500,
     img: "https://godairyfree.org/wp-content/uploads/2008/04/Cherry-Vanilla-Hemp-Smoothies-ig.jpg",
     amount: 1,
   },
   {
-    id: 4,
+    id: 6,
     title: "Fake Driver's License (US)",
     price: 200,
     img: "https://i.pinimg.com/originals/2f/37/19/2f3719fde044b38824fb3feef8f5209a.jpg",
