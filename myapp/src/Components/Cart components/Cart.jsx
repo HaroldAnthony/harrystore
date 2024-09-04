@@ -21,7 +21,7 @@ const Cart = ({ cart, setCart, handlechange }) => {
   return (
     <div>
       <article>
-        {cart.map((item) => (
+        {cart?.map((item) => (
           <div className="cart_box" key={item.id}>
             <div className="cart_img">
               <img src={item.img} alt="img" />
