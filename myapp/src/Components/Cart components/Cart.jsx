@@ -1,9 +1,46 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 
-const Cart = () => {
+const Cart = ({ cart, setCart, handlechange }) => {
+  const [price, setprice] = useState(0);
+
+  const handleremove = () => {
+    const arr = cart.filter((item) => item.id !== id);
+    setCart(arr);
+    handlePrice();
+  };
+
+  const handlePrice = () => {
+    let ans = 0;
+    cart.map((item) => (ans += item.amount * item.price));
+    setprice(ans);
+  };
+  useEffect(() => {
+    handlePrice();
+  });
   return (
-    <div>Cart</div>
-  )
-}
+    <div>
+      <article>
+        {cart.map((item) => {
+          <div className="cart_box">
+            <div className="cart_img">
+              <img src="item.img" alt="" srcSet="" />
+              <p>{item.img}</p>
+            </div>
+            <div>
+              <button onClick={() => handlePrice(item, 1)}>+</button>
+              <button onClick={() => handlePrice(item, -1)}>-</button>
+              <button onClick={() => handleremove(item.id)}>Remove</button>
+            </div>
+          </div>;
+        })}
 
-export default Cart
+        <div className="total">
+          <span>Total price of the cart</span>
+          <span> $ - {price}</span>
+        </div>
+      </article>
+    </div>
+  );
+};
+
+export default Cart;
