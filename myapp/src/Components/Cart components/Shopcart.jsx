@@ -1,9 +1,13 @@
 import React from "react";
 import "../styles/shopcart.css";
 
-const Shopcart = ({ item}) => {
+const Shopcart = ({ item, handleClick}) => {
   if (item) {
     const { title, price, img } = item;
+    const newhandleclick = () => {
+      handleClick(item);
+    };
+
     return (
       <div className="cards">
         <div className="image_box">
@@ -12,7 +16,7 @@ const Shopcart = ({ item}) => {
         <div className="details">
           <p>{title}</p>
           <p>Price :$ {price}</p>
-          <button>Add to Cart</button>
+          <button onClick={newhandleclick}>Add to Cart</button>
         </div>
       </div>
     );

@@ -1,12 +1,13 @@
 import React from "react";
 import list from "../data";
 import Shopcart from "./Shopcart";
+import { useState } from "react";
 
-const Amazon = () => {
+const Amazon = ({handleClick}) => {
   return (
     <section>
       {list.map((list) => (
-        <Shopcart item={list} key={list.id} />
+        <Shopcart item={list} handleClick = {handleClick} key={list.id} />
       ))}
     </section>
   );
