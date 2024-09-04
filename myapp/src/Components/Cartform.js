@@ -3,6 +3,7 @@ import Navbar from "./Cart components/Navbar";
 import Amazon from "./Cart components/Amazon";
 // import Shopcart from "./Cart components/Shopcart";
 import Cart from "./Cart components/Cart";
+import "./Cartform.css";
 
 const Cartform = () => {
   const [show, setShow] = useState(true);

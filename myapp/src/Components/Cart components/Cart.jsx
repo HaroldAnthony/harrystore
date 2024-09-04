@@ -39,8 +39,8 @@ const Cart = ({ cart, setCart, handlechange }) => {
           </div>
         ))}
         <div className="total">
-          <span>Total price of the cart</span>
-          <span> $ - {price}</span>
+          <span>Total price of your cart</span>
+          <span>=$ {price}</span>
         </div>
       </article>
     </div>
