@@ -17,4 +17,4 @@ My e-commerce platform, built using React.js.
 
 <br>
 
-<b>12-09-2024 12:49</b> - <p>The <b>Login section</b> construction is complete, although it is not connected to the homepage. The purpose of the section is to just demonstrate the credential authentication process, albeit without any redirecting. The Signup section is still unbuilt.</p>
+<b>12-09-2024 12:49</b> - <p>The <b>Login section</b> construction is complete, although it is not connected to the homepage. The purpose of the section is to just demonstrate the credentials authentication process, albeit without any redirecting. The Signup section is still unbuilt.</p>
